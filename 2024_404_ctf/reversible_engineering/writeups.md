@@ -161,7 +161,7 @@ int main(void){
 
 On utilise python pour décompiler le crackme grâce à l'api de ghidra (headless analyzer) et on stocke le résultat dans deux fichiers :
 - `decompiled_main.txt` pour pouvoir récupérer la clé 
-- `decompiled_encode.c` qui contient le code pour la fonction `encrypt` 
+- `decompiled_encode.c` qui contient le code pour la fonction `encrypt`    
 (Voir [ici](https://github.com/HackOvert/GhidraSnippets) pour plus d'informations)
 
 ```python
