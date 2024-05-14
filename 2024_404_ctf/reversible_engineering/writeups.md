@@ -15,7 +15,7 @@ nc challenges.404ctf.fr 31999
 
 # Début de la réflexion
 
-Le but du challenge est de récupérer un binaire trouver le mot de passe permettant de valider et renvoyer ce mot de passe pour obtenir le flag.
+Le but du challenge est de récupérer un binaire, trouver le mot de passe permettant de valider et de renvoyer ce mot de passe pour obtenir le flag.
 
 On commence par télecharger et analyser quelques binaires à l'aide de ghidra.
 
@@ -65,10 +65,10 @@ On remarque que le programme est toujours similaire :
 - Ce mot de passe est chiffré et ce chiffrement est comparé avec une clé.
 
 Mais il y a de petits changements :
-- La clé change
-- Les opérations executé sur le mot de passe changent
+- La clé change.
+- Les opérations exécutées sur le mot de passe changent.
 
-Analysons également quelques fonctions `encrypt`
+Analysons également quelques fonctions `encrypt`.
 ```c
 char * encrypt(char *password)
 {
@@ -95,12 +95,12 @@ On remarque que le mot de passe est chiffré caractère par caractère, il est d
 
 # Idée 
 
-Mon idée est de récuperer le code de la fonction encrypt grace à l'API de scripting de ghidra et de m'en servir pour dans un autre programme pour bruteforce le mot de passe.   
-Pour ça plusieurs choses sont nécessaire.
+Mon idée est de récupérer le code de la fonction encrypt grâce à l'API de scripting de ghidra et de m'en servir pour dans un autre programme pour bruteforce le mot de passe.   
+Pour cela, plusieurs choses sont nécessaires.
 
 ## Automatiser le télechargement des binaires
 
-Pour cela on écrit un petit script bash qui nous permettra également de lier entre elle toutes les parties du processus.    
+On écrit un petit script bash qui nous permettra également de lier entre elle toutes les parties du processus.    
 On le complétera plus tard.
 ```bash
 #!/bin/bash
@@ -160,9 +160,9 @@ int main(void){
 ## Récupération de la fonction encrypt
 
 On utilise python pour décompiler le crackme grâce à l'api de ghidra (headless analyzer) et on stocke le résultat dans deux fichiers :
-- `decompiled_main.txt` pour pouvoir récuperer la clé 
+- `decompiled_main.txt` pour pouvoir récupérer la clé 
 - `decompiled_encode.c` qui contient le code pour la fonction `encrypt` 
-(Check out [here](https://github.com/HackOvert/GhidraSnippets) for more informations)
+(Voir [ici](https://github.com/HackOvert/GhidraSnippets) pour plus d'informations)
 
 ```python
 from ghidra.app.decompiler import DecompInterface
@@ -189,7 +189,7 @@ g.close()
 ## Envoie du mot de passe 
 
 On écrit un script python qui permettra d'envoyer le mot de passe une fois qu'il aura été récupéré.   
-Au passage on vérifie que le mot de passe est bien valide, car parfois ce n'est pas le cas.   
+Au passage, on vérifie que le mot de passe est bien valide, car parfois, ce n'est pas le cas.   
 
 ```python
 import socket
@@ -219,8 +219,8 @@ print(s.recv(4096).decode())
 
 ## Problème de la clé
 
-On tombe rapidement sur un problème, il faut insérer la clé dans le main du programme, on écrit donc un programme python permettant de générer le programme en C qui sera ensuite compilé avec `decompiled_encode.c` pour la fonction encrypt. (il y a surement une autre façon de le faire)    
-Je ne remet pas tout le programme en C juste les lignes modifié vous pouvez le revoir [ici](#bruteforce).
+On tombe rapidement sur un problème, il faut insérer la clé dans la fonction main du programme, on écrit donc un programme python permettant de générer le programme en C qui sera ensuite compilé avec `decompiled_encode.c` pour la fonction encrypt. (Il y a sûrement une autre façon de le faire.)    
+Je ne remets pas tout le programme en C juste les lignes modifiées, vous pouvez le revoir [ici](#bruteforce).
 
 ```python
 encoded_out = open("workdir/decompiled_main.txt")
@@ -243,11 +243,11 @@ main_file.close()
 
 # Lien entre les parties 
 
-Il faut maintenant lier toutes les parties entre elle pour cela on vas modifier le script bash.
-- On execute le headless analyze de ghidra avec le script de décompilation.
+Il faut maintenant lier toutes les parties entre elles pour cela, on va modifier le script bash.
+- On exécute le headless analyze de ghidra avec le script de décompilation.
 - On utilise sed pour modifier un peu la fonction `encrypt` et pour que le compilateur soit content.
-- On génére le main de bruteforce.
-- On compile tout puis on execute en récuperant le mot de passe dans `passwd.txt`
+- On génére le programme principal de bruteforce.
+- On compile tout puis on exécute en récupérant le mot de passe dans `passwd.txt`
 - On envoie le mot de passe et on affiche le flag avec `send.py`
 
 ```bash
@@ -271,4 +271,4 @@ gcc workdir/main.c workdir/decompiled_encode.c -o workdir/bruteforce
 python3 send.py
 ```
 
-Plus qu'a executer et hop là c'est réussi.
+Plus qu'à exécuter le programme et hop là, c'est réussi.
