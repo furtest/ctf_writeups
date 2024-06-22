@@ -1,6 +1,3 @@
-# ctf writeups
-
-
 # Writeups list
 
 - 2024
