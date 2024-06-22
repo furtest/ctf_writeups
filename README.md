@@ -2,7 +2,7 @@
 
 - 2024
     - [404 ctf](./2024_404_ctf/reversible_engineering.md)
-    - [Hack the box apocalypse](./2024_htb_apocalypse/misc)
+    - [Hack the box apocalypse](./2024_htb_apocalypse/summary.md)
 - 2023
     - [Hack the box university](./2023_htb_university_ctf/windows_of_opportunity_writeup.md)
 
