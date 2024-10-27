@@ -15,8 +15,8 @@ Here are the challenges I did :
 
 ## Web 
 
-- Paranormal picture
+- Paranormal picture (no writeup, it was easy)
 
 ## Forensic
 
-- Won't somebody think of the children
+- [Won't somebody think of the children](./wont_somebody_think_of_the_children/README.md)
