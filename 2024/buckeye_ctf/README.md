@@ -1,2 +1,2 @@
-I wrote only one writeup for this ctf : 
+I only wrote one writeup for this ctf : 
 [rev/thank](./rev_thank/README.md)
