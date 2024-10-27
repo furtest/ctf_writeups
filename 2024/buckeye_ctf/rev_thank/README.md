@@ -22,7 +22,11 @@ Ok so we have to send a file.
 Lets open binary ninja and take a look.
 - We find the function asking for the file size : [file size function](ask_file_size.png)
 - Space for the file is malloc'ed
-- The file is then asked for and read ![](ask_file.png)
+- The file is then asked for and read  
+
+![ask for file](ask_file.png)
+
+
 - After some checks and I believe a write to the disk we get to the interesting part
 
 # Exec function
@@ -31,7 +35,7 @@ We find an interesting function, after a bit of reading the manual we understand
 So we need to send a shared library object which contains a symbol `thank` (a function for example), and that function will get executed.
 Let's do it !!
 
-![](exec_function.png)
+![exec function](exec_function.png)
 
 # Getting the flag
 
