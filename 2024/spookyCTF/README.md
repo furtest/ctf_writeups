@@ -8,10 +8,10 @@ Here are the challenges I did :
 
 ## Bin
 
-- The gates are close
-- B00fer
-- My assm hurts
-- What flag
+- [The gates are closed](./the_gates_are_closed/README.md)
+- [B00fer](./B00fer/README.md)
+- [My assm hurts](./my_assm_hurst/README.md)
+- [What flag](./what_flag/README.md)
 
 ## Web 
 
