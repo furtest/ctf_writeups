@@ -10,6 +10,8 @@
 
 # Other
 
-
-Pour toute question ou remarque (des choses mal expliqué, faute d'orthographe, ...) contactez moi sur discord : `furtest`   
+Files that are not visible on [ctf.furtest.fr](https://ctf.furtest.fr) are accessible via [github](https://github.com/furtest/ctf_writeups)
 For questions or remarks (things that are badly explained, grammar, spelling mistake, ...) contact me on discord : `furtest`
+
+Certain fichiers non accessible sur [ctf.furtest.fr](https://ctf.furtest.fr) sont accessible sur [github](https://github.com/furtest/ctf_writeups)
+Pour toute question ou remarque (des choses mal expliqué, faute d'orthographe, ...) contactez moi sur discord : `furtest`   
