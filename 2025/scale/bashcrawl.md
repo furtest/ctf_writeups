@@ -29,6 +29,8 @@ cellar/armoury/chamber/spell:   echo "ln -f -s `pwd`/../../../chapel/courtyard/a
 
 There are two places where a portal is mentionned in the .scrap file and in a file in the chamber . As a lazy person I of course start by the one I am already in, the portal that lead to the rift. Wrong flag, ok then it's the other one. I try the other one and it's correct, the flag is `spell`. 
 
-## Bashcrawl 3
+## Bashcrawl 3-6
+
+I am not going to give you all the solutions you will have to finish by yourself 😉
 
 

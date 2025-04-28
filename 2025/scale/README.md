@@ -6,10 +6,10 @@ I attended the South California Linux Expo better known as [SCALE](https://www.s
 The CTF lasted 2h30 and me and a friend were able to get first place.  
 
 I solved the following challenges :
-- bashcrawl 1-6
-- exploitation (pwn)
-    - crash_override
-    - acid_burn
-- web
+- [Bashcrawl 1-6](./bashcrawl.md)
+- Exploitation (pwn)
+    - [crash_override](./exploitation/crash_override.md)
+    - [acid_burn](./exploitation/acid_burn.md)
+- Web
     - artist
     - the_dev_robots
