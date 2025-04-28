@@ -1,5 +1,7 @@
 # Writeups list
 
+- 2025
+    - [FCSC 2025](./2025/fcsc/README.md)
 - 2024
     - [spooky CTF](./2024/spookyCTF/README.md)
     - [buckeye ctf](./2024/buckeye_ctf/rev_thank/README.md)
