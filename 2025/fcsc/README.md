@@ -22,8 +22,8 @@ I solved 21 challenges some of them have writeups some not. Some of them where p
     - yabof (intro) - 25pts
     - [XORTP - 200pts](./pwn/xortp.md)
 - Crypto
-    - Carotte Radis Tomate (intro) - 25pts
-    - Smölkkey (intro) - 25pts
+    - [Carotte Radis Tomate (intro) - 25pts](./crypto/README.md)
+    - [Smölkkey (intro) - 25pts](./crypto/README.md)
 - Hardware
     - Badd Circuit (intro) - 25pts
     - Mechanical Display - 238pts
