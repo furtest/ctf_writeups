@@ -25,8 +25,8 @@ I solved 21 challenges some of them have writeups some not. Some of them where p
     - [Carotte Radis Tomate (intro) - 25pts](./crypto/README.md)
     - [Smölkkey (intro) - 25pts](./crypto/README.md)
 - Hardware
-    - Badd Circuit (intro) - 25pts
-    - Mechanical Display - 238pts
+    - [Badd Circuit (intro) - 25pts](./hardware/badd_circuit.md)
+    - [Mechanical Display - 238pts](./hardware/mechanical_display.md)
 - Misc
     - Voilà (Baby) (intro) - 25pts
     - Voilà - 115pts
