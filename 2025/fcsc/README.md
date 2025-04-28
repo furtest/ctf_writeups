@@ -6,11 +6,11 @@ I have been participating casually for the last 2 years but this year I invested
 I solved 21 challenges some of them have writeups some not. Some of them where part of the intro category which consistof easier challenges of various categories they are marked with `(intro)` after the name.  
 
 - Web
-    - Win95 Forever (intro) - 25pts
+    - [Win95 Forever (intro) - 25pts](./web/win95_forever.md)
 - Forensic
     - SoCrate 1/6 Technologie (intro) - 25pts
-    - iForensics - iCrash (intro) - 25pts
-    - iForensics - iDevice - 100pts
+    - [iForensics - iCrash (intro) - 25pts](./forensic/iforensic.md)
+    - [iForensics - iDevice - 100pts](./forensic/iforensic.md)
     - Analyse mémoire - Pour commencer (1/2) (intro) - 25pts
     - Analyse mémoire - Pour commencer (2/2) (intro) - 25pts
     - Analyse mémoire 1/5 - Exfiltration - 100pts
@@ -20,7 +20,7 @@ I solved 21 challenges some of them have writeups some not. Some of them where p
     - babyfuscation - 100pts
 - Pwn
     - yabof (intro) - 25pts
-    - XORTP - 200pts
+    - [XORTP - 200pts](./pwn/xortp.md)
 - Crypto
     - Carotte Radis Tomate (intro) - 25pts
     - Smölkkey (intro) - 25pts
