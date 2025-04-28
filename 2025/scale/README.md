@@ -11,5 +11,5 @@ I solved the following challenges :
     - [crash_override](./exploitation/crash_override.md)
     - [acid_burn](./exploitation/acid_burn.md)
 - Web
-    - artist
-    - the_dev_robots
+    - [artist](./web.md)
+    - [the_dev_robots](./web.md)
